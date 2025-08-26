@@ -1,9 +1,9 @@
 /** @format */
 
 :root {
-  --lightBG: #fff8f3;
+  --lightBG: #cbeffe;
   --onLightBG: #201b13;
-  --success: #4e6542;
+  --success: #629645;
   --onSuccess: #ffffff;
   --error: #ba1a1a;
   --onError: #ffffff;
