@@ -1,13 +1,25 @@
 /** @format */
 
 :root {
-  --lightBG: #cbeffe;
-  --onLightBG: #201b13;
-  --success: #629645;
+  --lightBG: #cbeffe; /* Light blue */
+  --onLightBG: #4c4845; /* Dark Gray */
+  --success: #a5d6a7; /* Light Green */
   --onSuccess: #ffffff;
-  --error: #ba1a1a;
+  --error: #c25f5f; /* Light Red */
   --onError: #ffffff;
-  --titleBackground: rgba(228, 216, 204, 0.7);
+  --titleBackground: rgba(239, 187, 207, 0.7); /* Pastel Pink */
+  --cardTitleBackground: rgba(255, 255, 255, 0.5);
+}
+
+/* dark-mode */
+body.dark-mode {
+  --lightBG: #2d2a2e; /* Dark Charcoal */
+  --onLightBG: #f5f5f5; /* Soft White */
+  --success: #388e3c; /* Darker Green */
+  --onSuccess: #ffffff;
+  --error: #ffcdd2; /* Light Red (better on dark bg) */
+  --titleBackground: rgba(50, 46, 52, 0.8); /* Dark Transparent */
+  --cardTitleBackground: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -87,6 +99,18 @@ nav {
 #aboutMeContainer {
   margin: 0 0 50px 0;
   padding: 20px 0 0 0;
+
+  h2 {
+    background-color: transparent;
+  }
+
+  p {
+    background-color: #ffcdd2;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;
+  }
 
   & h2,
   & p {
@@ -278,7 +302,7 @@ nav {
 
   & h4 {
     width: 100%;
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--cardTitleBackground);
     margin: 0;
     padding: 10px;
     min-height: 35%;
@@ -292,16 +316,16 @@ nav {
 }
 
 .projectCard:hover {
-  color: var(--lightBG);
+  color: var(--onLightBG);
   filter: none;
 
   & h4 {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
   }
 
   & p {
-    color: var(--lightBG);
-    text-shadow: 2px 2px 3px var(--onLightBG);
+    color: var(--onLightBG);
+    text-shadow: 2px 2px 3px var(--lightBG);
   }
 }
 

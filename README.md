@@ -6,6 +6,8 @@ A dynamic JavaScript-powered personal portfolio website that demonstrates modern
 
 ## 🎯 Rubric Compliance Status: **COMPLETE**
 
+## Project now getting remastered for personal use
+
 ---
 
 # 🐞 Bug Fix: Semantic List Markup Correction
